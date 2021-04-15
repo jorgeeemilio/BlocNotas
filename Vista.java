@@ -32,20 +32,20 @@ public class Vista
 	public Vista()
 	{
 		// SIN Layout para que ocupe toda la pantalla y 
-		// que se adapte siempre que esta cambie de tama�o
+		// que se adapte siempre que esta cambie de tamaño
 		ventana.setTitle("Bloc de Notas");
 
 		// Establecemos la barra de menú
 		ventana.setMenuBar(menuBar);
 
-		// A�adimos los elementos al menú archivo
+		// Añadimos los elementos al menú archivo
 		mnuArchivo.add(archivoNuevo);
 		mnuArchivo.add(archivoAbrir);
 		mnuArchivo.add(archivoGuardar);
 		mnuArchivo.addSeparator();
 		mnuArchivo.add(archivoSalir);
 
-		// A�adimos los elementos al men� gestion
+		// Añadimos los elementos al menú gestion
 		mnuGestion.add(gestionContarPalabras);
 		mnuGestion.add(gestionContarLetras);
 		mnuGestion.add(gestionContarVocales);
