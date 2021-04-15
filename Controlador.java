@@ -84,7 +84,11 @@ public class Controlador implements ActionListener, WindowListener
 		}
 		else if(evento.getSource().equals(this.vista.archivoAbrir))
 		{
-
+			String contenido;
+			this.vista.fdAbrir.setVisible(true);
+			contenido = this.modelo.cargarFichero(this.vista.fdAbrir.getDirectory()+""+this.vista.fdAbrir.getFile());
+			this.vista.txaEditor.selectAll();
+			this.vista.txaEditor.setText(contenido);
 		}
 		else if(evento.getSource().equals(this.vista.gestionContarPalabras))
 		{
@@ -109,3 +113,4 @@ public class Controlador implements ActionListener, WindowListener
 		}
 	}
 }
+
