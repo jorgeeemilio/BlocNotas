@@ -75,4 +75,22 @@ public class Modelo
 		catch(IOException i)
 		{}
 	}
+	public String cargarFichero(String ruta)
+	{
+		String contenido = "";
+		try
+		{
+			FileReader fr = new FileReader(ruta);
+			BufferedReader br = new BufferedReader(fr);
+			String s;
+			while((s=br.readLine())!=null)
+			{
+				contenido = contenido + s + '\n';
+			}
+			br.close();
+			fr.close();
+		}
+		catch(Exception e) {}
+		return contenido;
+	}
 }
